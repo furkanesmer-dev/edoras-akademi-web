@@ -1,0 +1,91 @@
+/* ==============================
+   GLOBAL LIGHT THEME
+   ============================== */
+
+:root{
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --surface-2: #f1f3f8;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: rgba(17, 24, 39, 0.10);
+  --shadow: 0 12px 30px rgba(17,24,39,0.10);
+  --primary: #2563eb;
+}
+
+html, body{
+  background: var(--bg) !important;
+  color: var(--text);
+  min-height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+.container, .container-fluid, .content { background: transparent; }
+
+/* Typography */
+h1,h2,h3,h4,h5,h6{ color: var(--text); font-weight: 700; }
+p,label,small{ color: var(--muted); }
+
+/* Cards */
+.card{
+  background: var(--surface);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.card-title{ color: var(--text); }
+
+/* Forms */
+.form-control, .form-select, textarea{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 12px;
+}
+.form-control::placeholder{ color: #9ca3af; }
+.form-control:focus, .form-select:focus, textarea:focus{
+  border-color: rgba(37,99,235,0.55);
+  box-shadow: 0 0 0 .22rem rgba(37,99,235,.18);
+}
+
+/* Buttons */
+.btn-primary{
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: none;
+  border-radius: 12px;
+}
+.btn-outline-light{
+  border-color: var(--border);
+  color: var(--text);
+}
+.btn-outline-light:hover{
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+/* Alerts */
+.alert-success{
+  background-color: rgba(34,197,94,0.12);
+  border-color: rgba(34,197,94,0.35);
+  color: #14532d;
+}
+.alert-danger{
+  background-color: rgba(239,68,68,0.12);
+  border-color: rgba(239,68,68,0.35);
+  color: #7f1d1d;
+}
+
+/* Profile specific (dark’tan taşanlar için) */
+.profile-card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+.profile-title{ color: var(--text); }
+.form-section h5{ color: var(--primary); }
+
+.profile-photo-wrapper{
+  border: 2px solid rgba(37,99,235,0.25);
+  background: rgba(37,99,235,0.06);
+}

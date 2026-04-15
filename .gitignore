@@ -1,0 +1,14 @@
+error_log
+*.log
+.env
+.env.*
+vendor/
+node_modules/
+.DS_Store
+Thumbs.db
+uploads/
+# Güvenli bir şekilde dışla
+*.key
+*.pem
+*.p12
+config/secrets.php

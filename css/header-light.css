@@ -1,0 +1,65 @@
+/* =========================
+   LIGHT THEME – DARK HEADER
+========================= */
+
+body.light-theme{
+  background: #f6f7fb;
+  color: #111827;
+}
+
+/* HEADER */
+.main-header{
+  background: #0f0f0f; /* SİYAH */
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* NAVBAR */
+.navbar{
+  padding: 14px 0;
+}
+
+/* MENU LINKLERİ */
+.nav-link{
+  color: #ffffff !important;      /* BEYAZ YAZI */
+  font-weight: 600;
+  transition: all .2s ease;
+  border-radius: 10px;
+  padding: 8px 12px !important;
+}
+
+/* HOVER */
+.nav-link:hover{
+  background: rgba(255,255,255,0.10);
+  color: #ffffff !important;
+}
+
+/* ICONLAR */
+.nav-link i{
+  color: #ffffff;
+}
+
+/* TOGGLER (MOBİL) */
+.navbar-toggler{
+  border: none;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+/* MAIN CONTENT FIX */
+main.container{
+  min-height: calc(100vh - 120px);
+}
+
+/* LOGO */
+.site-logo img{
+  height: 42px;
+  width: auto;
+  display: block;
+  filter: brightness(1.1); /* logo koyu zeminde net dursun */
+}
+
+@media (max-width: 768px){
+  .site-logo img{
+    height: 36px;
+  }
+}

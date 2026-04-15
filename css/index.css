@@ -1,0 +1,118 @@
+/* MOBIL BEYAZ ARKA PLAN SORUNU - KESIN COZUM */
+
+html,
+body {
+    min-height: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top, #1a1a1a, #0f0f0f);
+    margin: 0;
+}
+
+/* Bootstrap container bazen body'den kısa kalıyor */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer aşağı sabitlenir */
+main,
+.container {
+    flex: 1;
+}
+
+
+
+/* DASHBOARD - DARK THEME */
+
+
+body {
+    background: radial-gradient(circle at top, #1a1a1a, #0f0f0f);
+    color: #eaeaea;
+}
+
+.welcome-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.welcome-subtitle {
+    color: #aaaaaa;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Cards */
+.dashboard-card {
+    border-radius: 18px;
+    padding: 0;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-6px);
+}
+
+.dark-card {
+    background: linear-gradient(145deg, #1c1c1c, #111);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.dashboard-card .card-body {
+    padding: 30px;
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #bdbdbd;
+    margin-bottom: 20px;
+}
+
+/* Glow Button */
+.btn-glow {
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #0d6efd, #00d4ff);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-glow:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* Variants */
+.primary .btn-glow {
+    background: linear-gradient(135deg, #0d6efd, #00c6ff);
+}
+
+.success .btn-glow {
+    background: linear-gradient(135deg, #198754, #20c997);
+}
+
+.warning .btn-glow {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #000;
+}
+
+.btn-glow.dark {
+    background: linear-gradient(135deg, #444, #222);
+}

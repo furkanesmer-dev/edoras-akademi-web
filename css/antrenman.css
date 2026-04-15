@@ -1,0 +1,202 @@
+/* =========================================================
+   antrenman.css (LIGHT)
+   Beslenme & Antrenman aynı tasarım dili (açık tema)
+   ========================================================= */
+
+/* SAYFA ARKA PLAN */
+body.page-antrenman{
+  background:#f6f7fb !important;
+  color:#111827;
+}
+
+:root{
+  --card: #ffffff;
+  --border: rgba(17,24,39,.10);
+  --text:#111827;
+  --muted:#6b7280;
+  --accent:#2563eb;
+}
+
+/* layout helper’lar */
+.page-wrap{ max-width: 980px; }
+
+.section-split{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+}
+
+.subtle{
+  color: rgba(17,24,39,.55);
+  font-size: .92rem;
+  margin-top: 6px;
+}
+
+.page-title{
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 0;
+  color: #111827;
+}
+
+/* kart standardı */
+.glass-card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(17,24,39,0.10);
+}
+.card-pad{ padding: 16px; }
+
+/* Üst başlık kartı */
+.glass-top{
+  background: #ffffff;
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 14px 35px rgba(17,24,39,0.10);
+}
+
+/* Accordion = kart gibi (dark-theme şartını kaldırdık) */
+body.page-antrenman .accordion-item{
+  overflow: hidden;
+}
+
+body.page-antrenman .accordion-button{
+  background: #f9fafb;
+  color: #111827;
+  border: 0;
+  padding: 16px 18px;
+  font-weight: 800;
+}
+
+body.page-antrenman .accordion-button:not(.collapsed){
+  background: #eef2ff;
+}
+
+body.page-antrenman .accordion-button::after{
+  filter: none;
+  opacity: .8;
+}
+
+body.page-antrenman .accordion-body{
+  padding: 0; /* card-pad içeride */
+}
+
+/* Gün chipleri */
+.day-chip{
+  display:inline-flex;
+  align-items:center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(17,24,39,0.10);
+  background: rgba(17,24,39,0.03);
+  color: #111827;
+  font-weight: 800;
+  font-size: .85rem;
+}
+
+/* Gün renkleri (soft) */
+[data-day="push"] .day-chip{ background: rgba(239,68,68,.10); border-color: rgba(239,68,68,.20); }
+[data-day="pull"] .day-chip{ background: rgba(59,130,246,.10); border-color: rgba(59,130,246,.20); }
+[data-day="leg"] .day-chip{  background: rgba(34,197,94,.10); border-color: rgba(34,197,94,.20); }
+[data-day="shoulder"] .day-chip{ background: rgba(168,85,247,.10); border-color: rgba(168,85,247,.20); }
+[data-day="core"] .day-chip{ background: rgba(245,158,11,.12); border-color: rgba(245,158,11,.22); }
+
+/* Egzersiz kartı */
+.exercise-card{ background: #ffffff; }
+.exercise-title{
+  font-weight: 900;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+/* Tablo */
+.table{
+  color: var(--text) !important;
+  background: transparent !important;
+  margin-bottom: 0;
+}
+
+.table thead th{
+  color: var(--muted);
+  border-bottom: 1px solid var(--border) !important;
+  background: rgba(17,24,39,.03) !important;
+  font-weight: 800;
+}
+
+.table td, .table th{
+  border-top: 1px solid rgba(17,24,39,.08) !important;
+  background: transparent !important;
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover{
+  background: rgba(37,99,235,.05) !important;
+}
+
+/* Tablo kapsayıcı */
+.table-container{
+  background: #ffffff;
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 16px;
+  padding: 12px;
+  overflow:auto;
+  box-shadow: 0 10px 25px rgba(17,24,39,0.06);
+}
+
+/* GIF alanı */
+.gif-wrap{
+  background: #ffffff;
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 10px 25px rgba(17,24,39,0.06);
+}
+
+.gif-wrap img{
+  width:100%;
+  height:auto;
+  border-radius: 14px;
+  display:block;
+}
+
+/* totals bar */
+.totals-bar{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0,1fr));
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(17,24,39,.10);
+}
+
+.totals-item{
+  background: #ffffff;
+  border: 1px solid rgba(17,24,39,.10);
+  border-radius: 14px;
+  padding: 10px 12px;
+  box-shadow: 0 10px 25px rgba(17,24,39,0.06);
+}
+
+.totals-item .label{
+  color: rgba(17,24,39,.55);
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.totals-item .val{
+  font-size: 1.0rem;
+  font-weight: 900;
+  margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #111827;
+}
+
+/* Mobil */
+@media (max-width: 768px){
+  .section-split{ flex-direction: column; align-items: flex-start; }
+  .totals-bar{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+}

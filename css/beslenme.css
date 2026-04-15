@@ -1,0 +1,62 @@
+/* SADECE BESLENME SAYFASI (LIGHT) */
+body.page-beslenme{
+  background:#f6f7fb !important;
+  color:#111827;
+}
+
+:root{
+  --card:#ffffff;
+  --border: rgba(17,24,39,.10);
+  --muted:#6b7280;
+}
+
+/* layout */
+.page-wrap{max-width:980px}
+.page-title{font-size:1.4rem;font-weight:800;color:#111827}
+.subtle{color:rgba(17,24,39,.55);margin-bottom:12px}
+
+/* cards */
+.glass-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+  box-shadow: 0 14px 35px rgba(17,24,39,0.10);
+}
+.card-pad{padding:16px}
+
+/* table */
+.table{color:#111827}
+.table th{color:var(--muted);font-weight:700}
+.table td,.table th{border-color:rgba(17,24,39,.08)}
+.table-hover tbody tr:hover{
+  background: rgba(37,99,235,0.05);
+}
+
+/* totals */
+.totals-bar{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid rgba(17,24,39,.10)
+}
+.totals-item{
+  background:#ffffff;
+  border:1px solid rgba(17,24,39,.10);
+  border-radius:14px;
+  padding:10px;
+  box-shadow: 0 10px 25px rgba(17,24,39,0.06);
+}
+.totals-item .label{font-size:.8rem;color:var(--muted)}
+.totals-item .val{font-size:1.1rem;font-weight:800;color:#111827}
+
+@media(max-width:768px){
+  .totals-bar{grid-template-columns:repeat(2,1fr)}
+}
+/* DARK THEME OVERRIDE (BESLENME) */
+body.page-beslenme,
+body.page-beslenme html {
+  background: #f6f7fb !important;
+  color: #111827 !important;
+}

@@ -1,0 +1,238 @@
+/* Genel arkaplan */
+.auth-body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Ortalayıcı */
+.auth-wrapper {
+    width: 100%;
+    max-width: 420px;
+    padding: 15px;
+}
+
+/* Kart */
+.auth-card {
+    background: #111827;
+    border-radius: 16px;
+    padding: 35px 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    animation: fadeIn 0.6s ease;
+}
+
+/* Başlık */
+.auth-title {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.auth-subtitle {
+    color: #9ca3af;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* Input alanları */
+.auth-input {
+    background: #1f2933;
+    border: 1px solid #374151;
+    color: #fff;
+    padding: 12px 14px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.auth-input::placeholder {
+    color: #9ca3af;
+}
+
+.auth-input:focus {
+    background: #1f2933;
+    color: #fff;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.3);
+}
+
+/* Buton */
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(59,130,246,0.5);
+}
+
+/* Alt link */
+.auth-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.auth-footer a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animasyon */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HEADER */
+
+.main-header {
+    background: #020617;
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.logo span:first-child {
+    font-size: 22px;
+}
+
+.logo span:last-child {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #38bdf8;
+}
+
+.main-nav a {
+    margin: 0 14px;
+    color: #cbd5f5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main-nav a:hover {
+    color: #38bdf8;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.logout-btn {
+    color: #f87171;
+    text-decoration: none;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+    padding: 60px 20px;
+}
+
+.dashboard-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.dashboard-subtitle {
+    color: #94a3b8;
+    margin-bottom: 40px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.dashboard-card {
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 18px;
+    padding: 28px;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.dashboard-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.dashboard-card a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dashboard-card.admin {
+    border-color: #2563eb;
+}
+
+/* FOOTER */
+
+.main-footer {
+    background: #020617;
+    border-top: 1px solid #1e293b;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+.footer-inner {
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+}

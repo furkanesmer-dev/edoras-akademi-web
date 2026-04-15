@@ -1,0 +1,116 @@
+/* =========================
+   GLOBAL DARK HEADER
+========================= */
+
+body.dark-theme {
+    background: #0f0f0f;
+    color: #eaeaea;
+}
+
+.main-header {
+    background: linear-gradient(135deg, #121212, #1c1c1c);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* LOGO */
+.logo {
+    text-decoration: none;
+    font-weight: 800;
+    color: #00ffc6;
+    line-height: 1;
+}
+
+.logo span {
+    font-size: 1.5rem;
+}
+
+.logo small {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+/* MENU */
+.navbar {
+    padding: 16px 0;
+}
+
+.nav-link {
+    color: #eaeaea !important;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+
+.nav-link:hover {
+    color: #00ffc6 !important;
+}
+
+/* ICON LINKS */
+.icon-link {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+}
+
+.icon-link i {
+    transition: transform .2s ease, color .2s ease;
+}
+
+.icon-link:hover i {
+    transform: scale(1.15);
+    color: #00ffc6;
+}
+
+/* LOGOUT */
+.logout {
+    color: #ff5c5c !important;
+}
+
+.logout:hover i {
+    color: #ff8585 !important;
+}
+
+/* MOBILE */
+.navbar-toggler {
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+/* MAIN CONTENT FIX */
+main.container {
+    min-height: calc(100vh - 120px);
+}
+
+
+/* === LOGO === */
+.site-logo img {
+    height: 42px;          /* ideal görünüm */
+    width: auto;
+    display: block;
+}
+
+/* Mobilde biraz küçült */
+@media (max-width: 768px) {
+    .site-logo img {
+        height: 36px;
+    }
+}
+
+/* FORCE DARK HEADER (LIGHT MODE İÇİN) */
+.main-header,
+.navbar {
+  background: #0f0f0f !important;
+  border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+.nav-link,
+.nav-link i,
+.navbar-toggler {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.10) !important;
+  color: #ffffff !important;
+}

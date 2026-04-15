@@ -1,0 +1,258 @@
+/* ==============================
+   GLOBAL DARK THEME
+   ============================== */
+
+/* RESET + BODY */
+html, body {
+    background-color: #0f0f0f;
+    color: #eaeaea;
+    min-height: 100vh;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* BOOTSTRAP OVERRIDES */
+.container,
+.container-fluid,
+.content {
+    background: transparent;
+}
+
+/* ==============================
+   TYPOGRAPHY
+   ============================== */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+p, label, small {
+    color: #cfcfcf;
+}
+
+/* ==============================
+   HEADER / FOOTER
+   ============================== */
+
+header, footer {
+    background-color: #0b0b0b;
+    border-color: #1e1e1e;
+}
+
+.navbar {
+    background-color: #0b0b0b !important;
+}
+
+.navbar a {
+    color: #eaeaea !important;
+}
+
+.navbar a:hover {
+    color: #0d6efd !important;
+}
+
+/* ==============================
+   CARD (LOGIN / REGISTER / DASHBOARD)
+   ============================== */
+
+.card {
+    background: #151515;
+    border-radius: 16px;
+    border: 1px solid #222;
+    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+/* ==============================
+   FORM ELEMENTS
+   ============================== */
+
+.form-control,
+.form-select {
+    background-color: #101010;
+    border: 1px solid #2a2a2a;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.form-control::placeholder {
+    color: #888;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #101010;
+    color: #ffffff;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 .2rem rgba(13,110,253,.25);
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    border: none;
+    border-radius: 12px;
+}
+
+.btn-outline-light {
+    border-color: #444;
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ==============================
+   ALERTS
+   ============================== */
+
+.alert-success {
+    background-color: rgba(25, 135, 84, 0.15);
+    border-color: #198754;
+    color: #75d6a3;
+}
+
+.alert-danger {
+    background-color: rgba(220, 53, 69, 0.15);
+    border-color: #dc3545;
+    color: #f1999f;
+}
+
+/* ==============================
+   DASHBOARD CARDS
+   ============================== */
+
+.dashboard-card {
+    border-radius: 18px;
+    color: #fff;
+}
+
+.card-primary {
+    background: linear-gradient(135deg, #0d6efd, #084298);
+}
+
+.card-success {
+    background: linear-gradient(135deg, #198754, #0f5132);
+}
+
+.card-warning {
+    background: linear-gradient(135deg, #ffc107, #664d03);
+    color: #000;
+}
+
+/* ==============================
+   MODAL
+   ============================== */
+
+.modal-content {
+    background-color: #121212;
+    border-radius: 16px;
+}
+
+/* ==============================
+   LINKS
+   ============================== */
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #66a3ff;
+}
+
+
+/* SAYFA GENEL DARK ARKA PLAN */
+html, body {
+    background-color: #0f0f0f !important;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+
+.profile-card {
+    background: #121212;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 20px 50px rgba(0,0,0,.6);
+}
+
+.profile-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.profile-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-avatar img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0d6efd;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section h5 {
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.profile-card input,
+.profile-card select,
+.profile-card textarea {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.profile-card input::placeholder {
+    color: #aaa;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 15px;
+}
+/* ===== PROFİL FOTOĞRAFI (YUVARLAK + CROP) ===== */
+.profile-photo-wrapper{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;              /* 🔴 EN ÖNEMLİ SATIR */
+    border: 2px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;             /* 🔴 CROP */
+    object-position: center;
+    display: block;
+}
